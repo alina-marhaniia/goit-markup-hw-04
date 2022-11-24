@@ -162,11 +162,22 @@ img {
 
 /* ---------- Герой ----------*/
 .hero {
-  background: var(--dark-background-color);
   padding-top: 200px;
   padding-bottom: 200px;
+  background: var(--dark-background-color);
 }
 
+.overlay {
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 .hero-title {
   margin-bottom: 30px;
   font-weight: 900;
@@ -202,6 +213,33 @@ img {
 
 .about {
   padding-bottom: 0;
+}
+
+.about-item::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 4px;
+}
+
+.icon-antenna::before {
+  background-image: url(../images/antenna.svg);
+}
+
+.icon-clock::before {
+  background-image: url(../images/clock.svg);
+}
+
+.icon-diagram::before {
+  background-image: url(../images/diagram.svg);
+}
+
+.icon-astronaut::before {
+  background-image: url(../images/astronaut.svg);
 }
 .about-text {
   font-size: 14px;

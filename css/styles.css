@@ -121,8 +121,10 @@ img {
 }
 .contact-icon {
   margin-right: 10px;
+  fill: var(--main-text-color);
 }
-.header-icons:hover .contact-icon {
+.header-icon:hover .contact-icon,
+.header-icon:focus .contact-icon {
   fill: var(--accent-color);
 }
 .main-nav {
@@ -355,10 +357,12 @@ img {
   fill: #afb1b8;
 }
 
-.team-soc-link:hover .soc-icon {
+.team-soc-link:hover .soc-icon,
+.team-soc-link:focus .soc-icon {
   fill: var(--main-color);
 }
-.team-soc-link:hover {
+.team-soc-link:hover,
+.team-soc-link:focus {
   background-color: var(--accent-color);
 }
 
@@ -393,10 +397,12 @@ img {
   border-radius: 4px;
   fill: #afb1b8;
 }
-.clients-link:hover .clients-icon {
+.clients-link:hover,
+.clients-link:focus {
   fill: var(--accent-color);
 }
-.clients-link:hover {
+.clients-link:hover,
+.clients-link:focus {
   border-color: var(--accent-color);
 }
 
@@ -484,7 +490,8 @@ img {
   fill: var(--main-color);
   background: rgba(255, 255, 255, 0.1);
 }
-.footer-soc-link:hover {
+.footer-soc-link:hover,
+.footer-soc-link:focus {
   background-color: var(--accent-color);
 }
 /* -----------Секція Портфоліо----------- */
